@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "AuditTrail",
+  "version": "1.0",
+  "description": "A web-browser extension that acts as a audit trail for requests/responses",
+  "permissions": [
+    "proxy",
+    "tabs",
+    "webRequest",
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.svg"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon.svg"
+  }
+}
